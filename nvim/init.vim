@@ -1,5 +1,9 @@
 call plug#begin('~/.config/vim/plugged')
 
+
+" Git Fugitive -- git wrapper
+Plug 'tpope/vim-fugitive'
+
 " Colorizer
 Plug 'chrisbra/Colorizer'
 
