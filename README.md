@@ -16,3 +16,10 @@
     * hotkey mapping daemon
 - yabai
     * window manager
+
+## TODOS
+
+- [] Script to launch ranger
+- [] Script to launch Firefox Dev Edition
+- [] Better config for ranger
+- [] Yabai mappings wiki
