@@ -44,6 +44,9 @@ Plug 'mhinz/vim-startify'
 
 call plug#end()
 
+" Set easyclip clipboard settings
+set clipboard=unnamed
+
 "Nerd Tree Mapping CTL + n"
 map <C-n> :NERDTreeToggle<CR>
 
