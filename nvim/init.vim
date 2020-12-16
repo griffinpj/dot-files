@@ -1,5 +1,7 @@
 call plug#begin('~/.config/vim/plugged')
 
+" Centralizes clipboard between different vim instances
+Plug 'svermeulen/vim-easyclip'
 
 " Git Fugitive -- git wrapper
 Plug 'tpope/vim-fugitive'
@@ -105,6 +107,8 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
+" Ejs support?
+au BufNewFile,BufRead *.ejs set filetype=html
 
 colorscheme xcodedark
 
