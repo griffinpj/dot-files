@@ -1,5 +1,8 @@
 call plug#begin('~/.config/vim/plugged')
 
+" Plugin to make commenting source code easier :)
+Plug 'tpope/vim-commentary'
+
 " Centralizes clipboard between different vim instances
 Plug 'svermeulen/vim-easyclip'
 
