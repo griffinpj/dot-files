@@ -1,4 +1,12 @@
+"Set up plugin support :)"
+"************************"
 call plug#begin('~/.config/vim/plugged')
+
+" Indent Guides
+"Plug 'nathanaelkane/vim-indent-guides'
+
+" Tab Completion Support
+Plug 'ervandew/supertab'
 
 " Plugin to make commenting source code easier :)
 Plug 'tpope/vim-commentary'
@@ -46,6 +54,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mhinz/vim-startify'
 
 call plug#end()
+"************************"
 
 " Set easyclip clipboard settings
 set clipboard=unnamed
@@ -56,10 +65,22 @@ map <C-n> :NERDTreeToggle<CR>
 "Fuzzy Search Mapping CTL + p"
 map <C-p> :Files<CR>
 
+" Indent Guides Setup
+"let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_start_level = 2
+"let g:indent_guides_guide_size = 1
+
+"hi IndentGuidesOdd  ctermbg=lightgrey
+"hi IndentGuidesEven ctermbg=darkgrey
+
+
+"Faster scrolling
 set ttyfast
 
+"Lower Status bar colors
 let g:airline_theme='deus'
 
+"remap vim command prefix
 nnoremap ; :
 
 "Try to keep lines to 80...
@@ -108,7 +129,6 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-
 "Invisible character colors 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -145,7 +165,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set number
 set cursorline
 filetype indent on
 set foldlevelstart=1
