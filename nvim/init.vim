@@ -61,6 +61,7 @@ set clipboard=unnamed
 
 "Nerd Tree Mapping CTL + n"
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 "Fuzzy Search Mapping CTL + p"
 map <C-p> :Files<CR>
@@ -119,6 +120,7 @@ nnoremap <S-l> :tabnext<CR>
 nnoremap <S-t> :tabnew<CR>
 nnoremap <S-w> :tabclose<CR>
 
+" Resizing Vertical & Horizontal Splits
 nnoremap <s-j> :resize -1<CR>
 nnoremap <s-k> :resize +1<CR>
 nnoremap <s-o> :vertical resize -1<CR>
@@ -152,28 +154,50 @@ let wiki = {}
 let wiki.nested_syntaxes = {'js': 'javascript', 'python': 'python'}
 let g:vimwiki_list = [wiki]
 
+"Modifiable
+:set ma
+
+"Transparent Background
+let g:is_transparent = 0
+
+hi Normal guibg=NONE ctermbg=NONE
+
+function! Toggle_transparent()
+    if g:is_transparent == 0
+        hi Normal guibg=NONE ctermbg=NONE
+        let g:is_transparent = 1
+    else
+        set background=dark
+        let g:is_transparent = 0
+    endif
+endfunction
+nnoremap <C-t> :call Toggle_transparent()<CR>
+
+"Cursor Line
+set cursorline
 
 "Hybrid Numbering"
 set number relativenumber
 set nu rnu
 
-
-filetype indent off
-let NERDTreeShowHidden=1
+"Syntax Highlight
 syntax enable
+filetype indent on
+
+"Tab Config
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set cursorline
-filetype indent on
+
+" Folding Settings
 set foldlevelstart=1
 set foldnestmax=1
-
-" Setting this to syntax screws performance... 
-set foldmethod=indent
-
+set foldmethod=indent " Setting this to syntax screws performance... 
 set foldenable
+
+"Important Key Mappings
 nnoremap <space> za
 imap jk <ESC>
+
 set showmatch

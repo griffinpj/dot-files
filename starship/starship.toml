@@ -1,5 +1,19 @@
 # Starship Config File :)
 
+# Git Status Icons
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+
+
 # Don't print a new line at the start of the prompt
 add_newline = false 
 
