@@ -4,12 +4,19 @@
 
 > I use these programs primarily for development,
 
+- spacebar
+    * Simple top menu bar
 - nvim
+    * init.vim === .vimrc
     * cli text editor
 - kitty
     * terminal emulator
 - fish
     * shell
+- starship
+    * easy cli prompt
+- ticker
+    * Shell script to check stocks
 - ranger
     * terminal-based file explorer
 - skhd
@@ -17,9 +24,3 @@
 - yabai
     * window manager
 
-## TODOS
-
-- [ ] Script to launch ranger
-- [ ] Script to launch Firefox Dev Edition
-- [ ] Better config for ranger
-- [ ] Yabai mappings wiki
