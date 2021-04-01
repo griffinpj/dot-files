@@ -8,8 +8,8 @@ call plug#begin('~/.config/vim/plugged')
 " Javascript snippets
 
 " Dependencies... ---
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
 " ---
 
 Plug 'garbas/vim-snipmate'
