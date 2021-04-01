@@ -1,6 +1,19 @@
 "Set up plugin support :)"
 "************************"
 call plug#begin('~/.config/vim/plugged')
+"************************"
+
+" *** PLUGINS ***
+
+" Javascript snippets
+
+" Dependencies... ---
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+" ---
+
+Plug 'garbas/vim-snipmate'
+Plug 'grvcoelho/vim-javascript-snippets'
 
 " Indent Guides
 "Plug 'nathanaelkane/vim-indent-guides'
@@ -54,7 +67,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mhinz/vim-startify'
 
 call plug#end()
-"************************"
+" *** PLUGINS ***
 
 " Set easyclip clipboard settings
 set clipboard=unnamed
@@ -162,6 +175,7 @@ let g:is_transparent = 0
 
 hi Normal guibg=NONE ctermbg=NONE
 
+" Transparency toggle ctl+t
 function! Toggle_transparent()
     if g:is_transparent == 0
         hi Normal guibg=NONE ctermbg=NONE
