@@ -69,6 +69,9 @@ Plug 'mhinz/vim-startify'
 call plug#end()
 " *** PLUGINS ***
 
+" Set old shipmate parser as default
+let g:snipMate = { 'snippet_version' : 0 } 
+
 " Set easyclip clipboard settings
 set clipboard=unnamed
 
