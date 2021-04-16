@@ -15,6 +15,9 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'grvcoelho/vim-javascript-snippets'
 
+" Syntastic for ESLINT 
+Plug 'vim-syntastic/syntastic'
+
 " Indent Guides
 "Plug 'nathanaelkane/vim-indent-guides'
 
@@ -44,9 +47,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-"js highlighting..."
-Plug 'pangloss/vim-javascript'
-
 "Vim Wiki Plugin"
 Plug 'vimwiki/vimwiki'
 
@@ -68,6 +68,24 @@ Plug 'mhinz/vim-startify'
 
 call plug#end()
 " *** PLUGINS ***
+
+
+" Syntastic ESLINT Config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_generic = 1
+let g:syntastic_javascript_eslint_exec = '/bin/ls'
+let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
+let g:syntastic_javascript_eslint_args='-f compact'
+
 
 " Set old shipmate parser as default
 let g:snipMate = { 'snippet_version' : 0 } 
