@@ -72,10 +72,6 @@ Plug 'mhinz/vim-startify'
 call plug#end()
 " *** PLUGINS ***
 
-" Scrolling Setup
-g:smoothie_no_default_mappings=0
-
-
 " Set old shipmate parser as default
 let g:snipMate = { 'snippet_version' : 0 } 
 
@@ -122,7 +118,7 @@ nnoremap ? ?\v
 vnoremap ? ?\v
 
 "Mapping :Ag command multiple file string searching"
-nnoremap <C-d> :Ag .<CR>
+nnoremap <C-s> :Ag .<CR>
 let g:ag={}
 let g:ag.working_path_mode='r'
 
