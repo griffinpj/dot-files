@@ -5,6 +5,9 @@ call plug#begin('~/.config/vim/plugged')
 
 " *** PLUGINS ***
 
+" Smoother Scrolling
+Plug 'psliwka/vim-smoothie'
+
 " Javascript snippets
 
 " Dependencies... ---
@@ -69,7 +72,8 @@ Plug 'mhinz/vim-startify'
 call plug#end()
 " *** PLUGINS ***
 
-
+" Scrolling Setup
+g:smoothie_no_default_mappings=0
 
 
 " Set old shipmate parser as default
