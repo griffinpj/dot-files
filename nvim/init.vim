@@ -211,8 +211,8 @@ set shiftwidth=4
 set expandtab
 
 " Folding Settings
-set foldlevelstart=1
-set foldnestmax=1
+set foldlevelstart=0
+set foldnestmax=5
 set foldmethod=indent " Setting this to syntax screws performance... 
 set foldenable
 
