@@ -237,3 +237,6 @@ let g:syntastic_javascript_eslint_generic = 1
 let g:syntastic_javascript_eslint_exec = '/bin/ls'
 let g:syntastic_javascript_eslint_exe = 'npx eslint'
 let g:syntastic_javascript_eslint_args='-f compact'
+
+" Close syntastic window
+nnoremap <C-c> :lclose<CR>
