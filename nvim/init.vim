@@ -5,6 +5,9 @@ call plug#begin('~/.config/vim/plugged')
 
 " *** PLUGINS ***
 
+" Better Find and Replace
+Plug 'kqito/vim-easy-replace'
+
 " Smoother Scrolling
 Plug 'psliwka/vim-smoothie'
 
