@@ -1,2 +1,2 @@
-text/html; lynx -display_charset=utf-8 -dump %s; 
-nametemplate=%s.html; copiousoutput
+text/html; lynx -force_html -dump %s; copiousoutput
+text/html; lynx -force_html %s
