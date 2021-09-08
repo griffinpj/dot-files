@@ -5,7 +5,7 @@ call plug#begin('~/.config/vim/plugged')
 
 " *** PLUGINS ***
 
-" Better Find and Replace
+" Better Find and Replace '\ + r + a'
 Plug 'kqito/vim-easy-replace'
 
 " Smoother Scrolling
