@@ -13,6 +13,8 @@ set imap_keepalive = 900
 set imap_check_subscribed
 set move = no
 
+# URLVIEW -> Ctl + b
+
 # Change default directory to save attachments. 
 macro attach s '<save-entry> <bol>/home/griffinjohnson/attachment/<eol>' 'save attachment'
 # ================  SMTP  ====================
