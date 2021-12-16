@@ -1,89 +1,49 @@
-"Set up plugin support :)"
+" AutoMagically Install vim-plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+    silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 "************************"
-call plug#begin('~/.config/vim/plugged')
-"************************"
+call plug#begin(data_dir . '/plugins')
 
-" *** PLUGINS ***
+" Maybe this works ?
+" for f in split(glob('~/.config/nvim/plugins'), '\n')
+"     exe 'source' f
+" endfor
 
-" Better Find and Replace '\ + r + a'
-Plug 'kqito/vim-easy-replace'
-
-" Smoother Scrolling
-Plug 'psliwka/vim-smoothie'
-
-" Javascript snippets
-
-" Dependencies... ---
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-" ---
-
-Plug 'garbas/vim-snipmate'
-Plug 'grvcoelho/vim-javascript-snippets'
-
-" Syntastic for ESLINT 
-Plug 'vim-syntastic/syntastic'
-
-" Indent Guides
-"Plug 'nathanaelkane/vim-indent-guides'
-
-" Tab Completion Support
-Plug 'ervandew/supertab'
-
-" Plugin to make commenting source code easier :)
-Plug 'tpope/vim-commentary'
-
-" Centralizes clipboard between different vim instances
-Plug 'svermeulen/vim-easyclip'
-
-" Git Fugitive -- git wrapper
-Plug 'tpope/vim-fugitive'
-
-" Colorizer
-Plug 'chrisbra/Colorizer'
-
-"Nerd Tree -> https://github.com/preservim/nerdtree"
-Plug 'preservim/nerdtree'
-
-"Fuzzy Searching"
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
-"Status Bar"
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-"Vim Wiki Plugin"
-Plug 'vimwiki/vimwiki'
-
-"Xcode Dark theme for vim"
-Plug 'arzg/vim-colors-xcode'
-
-"Auto pairs for parenthesis etc..."
-Plug 'jiangmiao/auto-pairs'
-
-"Shows vim diffs next to line numbers"
-Plug 'airblade/vim-gitgutter'
-
-"vim ejs support"
-Plug 'briancollins/vim-jst'
-Plug 'pangloss/vim-javascript'
-
-"Fancy Start screen :)
-Plug 'mhinz/vim-startify'
+source ~/.config/nvim/plugins/airline.vim
+source ~/.config/nvim/plugins/easy-replace.vim
+source ~/.config/nvim/plugins/fzf.vim
+source ~/.config/nvim/plugins/snipmate.vim
+source ~/.config/nvim/plugins/themes.vim
+source ~/.config/nvim/plugins/auto-pairs.vim
+source ~/.config/nvim/plugins/easyclip.vim
+source ~/.config/nvim/plugins/gitgutter.vim
+source ~/.config/nvim/plugins/startify.vim
+source ~/.config/nvim/plugins/vimwiki.vim
+source ~/.config/nvim/plugins/colorizer.vim
+source ~/.config/nvim/plugins/ejs-support.vim
+source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/supertab.vim
+source ~/.config/nvim/plugins/commentary.vim
+source ~/.config/nvim/plugins/fugitive.vim
+source ~/.config/nvim/plugins/smoothie.vim
+source ~/.config/nvim/plugins/syntastic.vim
 
 call plug#end()
 " *** PLUGINS ***
 
-" Set old shipmate parser as default
-let g:snipMate = { 'snippet_version' : 0 } 
+set hidden " Lets you close a non-saved buffere and retain work "
 
-" Set easyclip clipboard settings
-set clipboard=unnamed
+" Don't let scroll to top... Keep context
+set scrolloff=8
+set sidescrolloff=8
 
-"Nerd Tree Mapping CTL + n"
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeShowHidden=1
+" Re highlight after indent...
+vnoremap < <gv
+vnoremap > >gv
 
 "Fuzzy Search Mapping CTL + p"
 map <C-p> :Files<CR>
@@ -96,12 +56,8 @@ map <C-p> :Files<CR>
 "hi IndentGuidesOdd  ctermbg=lightgrey
 "hi IndentGuidesEven ctermbg=darkgrey
 
-
 "Faster scrolling
 set ttyfast
-
-"Lower Status bar colors
-let g:airline_theme='deus'
 
 "remap vim command prefix
 nnoremap ; :
@@ -119,11 +75,6 @@ vnoremap / /\v
 
 nnoremap ? ?\v
 vnoremap ? ?\v
-
-"Mapping :Ag command multiple file string searching"
-nnoremap <C-s> :Ag .<CR>
-let g:ag={}
-let g:ag.working_path_mode='r'
 
 set hlsearch incsearch
 
@@ -171,17 +122,11 @@ filetype plugin on
 syntax on
 hi VimwikiLink term=underline ctermfg=cyan guifg=cyan gui=underline
 
-" Nested syntax hl types
-let wiki = {}
-let wiki.nested_syntaxes = {'js': 'javascript', 'python': 'python'}
-let g:vimwiki_list = [wiki]
-
 "Modifiable
 :set ma
 
 "Transparent Background
 let g:is_transparent = 0
-
 hi Normal guibg=NONE ctermbg=NONE
 
 " Transparency toggle ctl+t
@@ -225,21 +170,10 @@ imap jk <ESC>
 
 set showmatch
 
-" Syntastic ESLINT Config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_generic = 1
-let g:syntastic_javascript_eslint_exec = '/bin/ls'
-let g:syntastic_javascript_eslint_exe = 'npx eslint'
-let g:syntastic_javascript_eslint_args='-f compact'
-
 " Close syntastic window
 nnoremap <C-c> :lclose<CR>
+
+"Mapping :Ag command multiple file string searching"
+nnoremap <C-s> :Ag .<CR>
+let g:ag={}
+let g:ag.working_path_mode='r'
