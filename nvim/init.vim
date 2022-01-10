@@ -13,6 +13,7 @@ call plug#begin(data_dir . '/plugins')
 "     exe 'source' f
 " endfor
 
+source ~/.config/nvim/plugins/ghost.vim
 source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/easy-replace.vim
 source ~/.config/nvim/plugins/fzf.vim
