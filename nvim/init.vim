@@ -8,17 +8,11 @@ endif
 "************************"
 call plug#begin(data_dir . '/plugins')
 
-" Maybe this works ?
-" for f in split(glob('~/.config/nvim/plugins'), '\n')
-"     exe 'source' f
-" endfor
-
 source ~/.config/nvim/plugins/ghost.vim
 source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/easy-replace.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/snipmate.vim
-source ~/.config/nvim/plugins/themes.vim
 source ~/.config/nvim/plugins/auto-pairs.vim
 source ~/.config/nvim/plugins/easyclip.vim
 source ~/.config/nvim/plugins/gitgutter.vim
@@ -32,9 +26,8 @@ source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/smoothie.vim
 source ~/.config/nvim/plugins/syntastic.vim
-
-call plug#end()
-" *** PLUGINS ***
+source ~/.config/nvim/plugins/themes.vim
+call plug#end() " *** PLUGINS ***
 
 set hidden " Lets you close a non-saved buffere and retain work "
 
@@ -43,19 +36,11 @@ set scrolloff=8
 set sidescrolloff=8
 
 " Re highlight after indent...
-vnoremap < <gv
-vnoremap > >gv
+" vnoremap < <gv
+" vnoremap > >gv
 
 "Fuzzy Search Mapping CTL + p"
 map <C-p> :Files<CR>
-
-" Indent Guides Setup
-"let g:indent_guides_enable_on_vim_startup = 1
-"let g:indent_guides_start_level = 2
-"let g:indent_guides_guide_size = 1
-
-"hi IndentGuidesOdd  ctermbg=lightgrey
-"hi IndentGuidesEven ctermbg=darkgrey
 
 "Faster scrolling
 set ttyfast
@@ -86,8 +71,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-nnoremap <C-i> :VimwikiIndex<CR>
-
 "Navigating Tabs..."
 nnoremap <S-h> :tabprevious<CR>
 nnoremap <S-l> :tabnext<CR>
@@ -109,22 +92,10 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-" Ejs support?
-au BufNewFile,BufRead *.ejs set filetype=html
-
 colorscheme xcodedark
 
 "Background rendering Problem w/ 3rd party terminals (kitty)"
 let &t_ut=''
-
-"More config for vimWIKI"
-set nocompatible
-filetype plugin on
-syntax on
-hi VimwikiLink term=underline ctermfg=cyan guifg=cyan gui=underline
-
-"Modifiable
-:set ma
 
 "Transparent Background
 let g:is_transparent = 0
@@ -141,6 +112,13 @@ function! Toggle_transparent()
     endif
 endfunction
 nnoremap <C-t> :call Toggle_transparent()<CR>
+
+" Ejs support?
+au BufNewFile,BufRead *.ejs set filetype=html
+
+
+"Modifiable
+:set ma
 
 "Cursor Line
 set cursorline
