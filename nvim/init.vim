@@ -35,6 +35,8 @@ set hidden " Lets you close a non-saved buffere and retain work "
 set scrolloff=8
 set sidescrolloff=8
 
+set autochdir
+
 " Re highlight after indent...
 " vnoremap < <gv
 " vnoremap > >gv
