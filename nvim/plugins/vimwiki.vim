@@ -3,7 +3,7 @@ Plug 'vimwiki/vimwiki'
 
 " Nested syntax hl types
 let wiki = {}
-let wiki.nested_syntaxes = {'js': 'javascript', 'python': 'python'}
+let wiki.nested_syntaxes = {'js': 'javascript', 'python': 'python', 'sql': 'sql'}
 let g:vimwiki_list = [wiki]
 
 nnoremap <C-i> :VimwikiIndex<CR>

@@ -8,7 +8,8 @@ endif
 "************************"
 call plug#begin(data_dir . '/plugins')
 
-source ~/.config/nvim/plugins/ghost.vim
+" Using vim with other programs ...
+"source ~/.config/nvim/plugins/ghost.vim
 source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/easy-replace.vim
 source ~/.config/nvim/plugins/fzf.vim
@@ -25,7 +26,7 @@ source ~/.config/nvim/plugins/supertab.vim
 source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/smoothie.vim
-source ~/.config/nvim/plugins/syntastic.vim
+" source ~/.config/nvim/plugins/syntastic.vim
 source ~/.config/nvim/plugins/themes.vim
 call plug#end() " *** PLUGINS ***
 
@@ -35,7 +36,6 @@ set hidden " Lets you close a non-saved buffere and retain work "
 set scrolloff=8
 set sidescrolloff=8
 
-set autochdir
 
 " Re highlight after indent...
 " vnoremap < <gv
