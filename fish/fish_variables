@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export BUN_INSTALL:/Users/griffinjohnson/\x2ebun
 SETUVAR EDITOR:nvim
 SETUVAR STARSHIP_CONFIG:/Users/griffinjohnson/\x2econfig/starship
 SETUVAR __fish_initialized:3100
