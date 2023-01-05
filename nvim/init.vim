@@ -26,6 +26,7 @@ source ~/.config/nvim/plugins/supertab.vim
 source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/smoothie.vim
+source ~/.config/nvim/plugins/coc.vim
 " source ~/.config/nvim/plugins/syntastic.vim
 source ~/.config/nvim/plugins/themes.vim
 call plug#end() " *** PLUGINS ***
@@ -51,7 +52,7 @@ set ttyfast
 nnoremap ; :
 
 "Try to keep lines to 80...
-set colorcolumn=80
+set colorcolumn=120
 
 "don't skip wrapped lines"
 nnoremap j gj
@@ -94,7 +95,6 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-colorscheme xcodedark
 
 "Background rendering Problem w/ 3rd party terminals (kitty)"
 let &t_ut=''
@@ -118,6 +118,8 @@ nnoremap <C-t> :call Toggle_transparent()<CR>
 " Ejs support?
 au BufNewFile,BufRead *.ejs set filetype=html
 
+" Set color scheme from plugins/theme.vim
+colorscheme tender
 
 "Modifiable
 :set ma

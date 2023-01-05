@@ -1,3 +1,5 @@
 "Xcode Dark theme for vim"
-Plug 'arzg/vim-colors-xcode'
+
+
+Plug 'jacoborus/tender.vim'
 
