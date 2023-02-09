@@ -51,3 +51,7 @@ if ! command -v obsidian > /dev/null 2>&1; then
   echo "Installing obsidian..."
   brew install obsidian
 fi
+if ! command -v google-chrome > /dev/null 2>&1; then
+  echo "Installing google-chrome..."
+  brew install google-chrome
+fi
