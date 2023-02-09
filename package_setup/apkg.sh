@@ -16,6 +16,12 @@ while [ $# -gt 0 ]; do
       flag_install_package=false
       shift
       ;;
+     --remove)
+      flag_install_package=false
+      shift
+      flag_remove_package=true
+      break
+      ;;
     *)
       break
       ;;

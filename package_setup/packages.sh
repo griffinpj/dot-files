@@ -43,3 +43,11 @@ if ! command -v make > /dev/null 2>&1; then
   echo "Installing make..."
   brew install make
 fi
+if ! command -v insomnia > /dev/null 2>&1; then
+  echo "Installing insomnia..."
+  brew install insomnia
+fi
+if ! command -v obsidian > /dev/null 2>&1; then
+  echo "Installing obsidian..."
+  brew install obsidian
+fi
