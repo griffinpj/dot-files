@@ -75,3 +75,7 @@ if ! command -v tailscale > /dev/null 2>&1; then
   echo "Installing tailscale..."
   brew install tailscale
 fi
+if ! command -v roon > /dev/null 2>&1; then
+  echo "Installing roon..."
+  brew install roon
+fi
