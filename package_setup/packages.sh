@@ -67,3 +67,11 @@ if ! command -v datagrip > /dev/null 2>&1; then
   echo "Installing datagrip..."
   brew install datagrip
 fi
+if ! command -v zerotier-one > /dev/null 2>&1; then
+  echo "Installing zerotier-one..."
+  brew install zerotier-one
+fi
+if ! command -v tailscale > /dev/null 2>&1; then
+  echo "Installing tailscale..."
+  brew install tailscale
+fi
