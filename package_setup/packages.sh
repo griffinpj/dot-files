@@ -31,10 +31,6 @@ if ! command -v node > /dev/null 2>&1; then
   echo "Installing node..."
   brew install node
 fi
-if ! command -v npm > /dev/null 2>&1; then
-  echo "Installing npm..."
-  brew install npm
-fi
 if ! command -v python3 > /dev/null 2>&1; then
   echo "Installing python3..."
   brew install python3
@@ -54,4 +50,20 @@ fi
 if ! command -v google-chrome > /dev/null 2>&1; then
   echo "Installing google-chrome..."
   brew install google-chrome
+fi
+if ! command -v postman > /dev/null 2>&1; then
+  echo "Installing postman..."
+  brew install postman
+fi
+if ! command -v openvpn-connect > /dev/null 2>&1; then
+  echo "Installing openvpn-connect..."
+  brew install openvpn-connect
+fi
+if ! command -v webstorm > /dev/null 2>&1; then
+  echo "Installing webstorm..."
+  brew install webstorm
+fi
+if ! command -v datagrip > /dev/null 2>&1; then
+  echo "Installing datagrip..."
+  brew install datagrip
 fi
