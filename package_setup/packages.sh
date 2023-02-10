@@ -35,6 +35,10 @@ if ! command -v python3 > /dev/null 2>&1; then
   echo "Installing python3..."
   brew install python3
 fi
+if ! command -v python > /dev/null 2>&1; then
+  echo "Installing python..."
+  brew install python
+fi
 if ! command -v make > /dev/null 2>&1; then
   echo "Installing make..."
   brew install make
@@ -78,4 +82,20 @@ fi
 if ! command -v roon > /dev/null 2>&1; then
   echo "Installing roon..."
   brew install roon
+fi
+if ! command -v shottr > /dev/null 2>&1; then
+  echo "Installing shottr..."
+  brew install shottr
+fi
+if ! command -v paletro > /dev/null 2>&1; then
+  echo "Installing paletro..."
+  brew install paletro
+fi
+if ! command -v docker-compose > /dev/null 2>&1; then
+  echo "Installing docker-compose..."
+  brew install docker-compose
+fi
+if ! command -v colima > /dev/null 2>&1; then
+  echo "Installing colima..."
+  brew install colima
 fi

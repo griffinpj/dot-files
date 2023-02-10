@@ -15,3 +15,5 @@ set -g fish_key_bindings fish_user_key_bindings
 
 set -gx PNPM_HOME "/Users/griffinjohnson/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
+
+source /Users/gjohnson/.docker/init-fish.sh || true # Added by Docker Desktop
