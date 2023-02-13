@@ -2,3 +2,4 @@ configstore/*
 vim/*
 neofetch/*
 secrets/*
+coc/node_modules/**/*
