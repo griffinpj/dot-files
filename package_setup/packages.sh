@@ -27,10 +27,6 @@ if ! command -v kitty > /dev/null 2>&1; then
   echo "Installing kitty..."
   brew install kitty
 fi
-if ! command -v node > /dev/null 2>&1; then
-  echo "Installing node..."
-  brew install node
-fi
 if ! command -v python3 > /dev/null 2>&1; then
   echo "Installing python3..."
   brew install python3
@@ -98,4 +94,20 @@ fi
 if ! command -v colima > /dev/null 2>&1; then
   echo "Installing colima..."
   brew install colima
+fi
+if ! command -v ag > /dev/null 2>&1; then
+  echo "Installing ag..."
+  brew install ag
+fi
+if ! command -v fish > /dev/null 2>&1; then
+  echo "Installing fish..."
+  brew install fish
+fi
+if ! command -v yarn > /dev/null 2>&1; then
+  echo "Installing yarn..."
+  brew install yarn
+fi
+if ! command -v libreoffice > /dev/null 2>&1; then
+  echo "Installing libreoffice..."
+  brew install libreoffice
 fi
