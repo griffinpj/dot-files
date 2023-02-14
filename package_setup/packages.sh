@@ -111,3 +111,7 @@ if ! command -v libreoffice > /dev/null 2>&1; then
   echo "Installing libreoffice..."
   brew install libreoffice
 fi
+if ! command -v ranger > /dev/null 2>&1; then
+  echo "Installing ranger..."
+  brew install ranger
+fi
