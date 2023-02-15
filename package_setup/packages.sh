@@ -115,3 +115,11 @@ if ! command -v ranger > /dev/null 2>&1; then
   echo "Installing ranger..."
   brew install ranger
 fi
+if ! command -v exa > /dev/null 2>&1; then
+  echo "Installing exa..."
+  brew install exa
+fi
+if ! command -v nnn > /dev/null 2>&1; then
+  echo "Installing nnn..."
+  brew install nnn
+fi
