@@ -123,3 +123,23 @@ if ! command -v nnn > /dev/null 2>&1; then
   echo "Installing nnn..."
   brew install nnn
 fi
+if ! command -v tempbox > /dev/null 2>&1; then
+  echo "Installing tempbox..."
+  brew install tempbox
+fi
+if ! command -v jq > /dev/null 2>&1; then
+  echo "Installing jq..."
+  brew install jq
+fi
+if ! command -v gpg > /dev/null 2>&1; then
+  echo "Installing gpg..."
+  brew install gpg
+fi
+if ! command -v pinentry-mac > /dev/null 2>&1; then
+  echo "Installing pinentry-mac..."
+  brew install pinentry-mac
+fi
+if ! command -v gpg-suite > /dev/null 2>&1; then
+  echo "Installing gpg-suite..."
+  brew install gpg-suite
+fi
