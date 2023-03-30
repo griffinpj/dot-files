@@ -135,11 +135,23 @@ if ! command -v gpg > /dev/null 2>&1; then
   echo "Installing gpg..."
   brew install gpg
 fi
-if ! command -v pinentry-mac > /dev/null 2>&1; then
-  echo "Installing pinentry-mac..."
-  brew install pinentry-mac
-fi
 if ! command -v gpg-suite > /dev/null 2>&1; then
   echo "Installing gpg-suite..."
   brew install gpg-suite
+fi
+if ! command -v postgresql > /dev/null 2>&1; then
+  echo "Installing postgresql..."
+  brew install postgresql
+fi
+if ! command -v bartender > /dev/null 2>&1; then
+  echo "Installing bartender..."
+  brew install bartender
+fi
+if ! command -v istat-menus > /dev/null 2>&1; then
+  echo "Installing istat-menus..."
+  brew install istat-menus
+fi
+if ! command -v bitwarden > /dev/null 2>&1; then
+  echo "Installing bitwarden..."
+  brew install bitwarden
 fi
