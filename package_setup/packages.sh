@@ -123,31 +123,35 @@ if ! command -v nnn > /dev/null 2>&1; then
   echo "Installing nnn..."
   brew install nnn
 fi
-if ! command -v texstudio > /dev/null 2>&1; then
-  echo "Installing texstudio..."
-  brew install texstudio
+if ! command -v tempbox > /dev/null 2>&1; then
+  echo "Installing tempbox..."
+  brew install tempbox
 fi
-if ! command -v texlive > /dev/null 2>&1; then
-  echo "Installing texlive..."
-  brew install texlive
+if ! command -v jq > /dev/null 2>&1; then
+  echo "Installing jq..."
+  brew install jq
 fi
-if ! command -v mactex > /dev/null 2>&1; then
-  echo "Installing mactex..."
-  brew install mactex
+if ! command -v gpg > /dev/null 2>&1; then
+  echo "Installing gpg..."
+  brew install gpg
 fi
-if ! command -v zoom > /dev/null 2>&1; then
-  echo "Installing zoom..."
-  brew install zoom
+if ! command -v gpg-suite > /dev/null 2>&1; then
+  echo "Installing gpg-suite..."
+  brew install gpg-suite
 fi
-if ! command -v parallels > /dev/null 2>&1; then
-  echo "Installing parallels..."
-  brew install parallels
-fi
-if ! command -v crossover > /dev/null 2>&1; then
-  echo "Installing crossover..."
-  brew install crossover
+if ! command -v postgresql > /dev/null 2>&1; then
+  echo "Installing postgresql..."
+  brew install postgresql
 fi
 if ! command -v bartender > /dev/null 2>&1; then
   echo "Installing bartender..."
   brew install bartender
+fi
+if ! command -v istat-menus > /dev/null 2>&1; then
+  echo "Installing istat-menus..."
+  brew install istat-menus
+fi
+if ! command -v bitwarden > /dev/null 2>&1; then
+  echo "Installing bitwarden..."
+  brew install bitwarden
 fi
