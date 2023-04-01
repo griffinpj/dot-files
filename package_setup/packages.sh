@@ -123,3 +123,31 @@ if ! command -v nnn > /dev/null 2>&1; then
   echo "Installing nnn..."
   brew install nnn
 fi
+if ! command -v texstudio > /dev/null 2>&1; then
+  echo "Installing texstudio..."
+  brew install texstudio
+fi
+if ! command -v texlive > /dev/null 2>&1; then
+  echo "Installing texlive..."
+  brew install texlive
+fi
+if ! command -v mactex > /dev/null 2>&1; then
+  echo "Installing mactex..."
+  brew install mactex
+fi
+if ! command -v zoom > /dev/null 2>&1; then
+  echo "Installing zoom..."
+  brew install zoom
+fi
+if ! command -v parallels > /dev/null 2>&1; then
+  echo "Installing parallels..."
+  brew install parallels
+fi
+if ! command -v crossover > /dev/null 2>&1; then
+  echo "Installing crossover..."
+  brew install crossover
+fi
+if ! command -v bartender > /dev/null 2>&1; then
+  echo "Installing bartender..."
+  brew install bartender
+fi
