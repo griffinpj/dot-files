@@ -155,3 +155,15 @@ if ! command -v bitwarden > /dev/null 2>&1; then
   echo "Installing bitwarden..."
   brew install bitwarden
 fi
+if ! command -v cyberduck > /dev/null 2>&1; then
+  echo "Installing cyberduck..."
+  brew install cyberduck
+fi
+if ! command -v redisinsight > /dev/null 2>&1; then
+  echo "Installing redisinsight..."
+  brew install redisinsight
+fi
+if ! command -v amethyst > /dev/null 2>&1; then
+  echo "Installing amethyst..."
+  brew install amethyst
+fi
