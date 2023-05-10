@@ -1,3 +1,9 @@
+vim.filetype.add({
+    extension = {
+        ejs = "html"
+    }
+})
+
 vim.opt.guicursor = ""
 
 -- relative line numbering

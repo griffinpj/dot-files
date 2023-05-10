@@ -4,9 +4,12 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
 	'tsserver',
-	'sumneko_lua',
-	'rust_analyzer'
+	'lua_ls',
+	'rust_analyzer',
+    'eslint',
+    'cssls'
 })
+
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
@@ -27,6 +30,8 @@ lsp.set_preferences({
 	sign_icons = { }
 })
 
+
+-- runs in buffer only if lsp is associated
 lsp.on_attach(function(client, bufnr)
 	local opts = {buffer = bufnr, remap = false}
 

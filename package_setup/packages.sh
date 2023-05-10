@@ -167,3 +167,7 @@ if ! command -v amethyst > /dev/null 2>&1; then
   echo "Installing amethyst..."
   brew install amethyst
 fi
+if ! command -v ripgrep > /dev/null 2>&1; then
+  echo "Installing ripgrep..."
+  brew install ripgrep
+fi
