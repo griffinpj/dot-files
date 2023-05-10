@@ -1,2 +1,0 @@
-" Colorizer
-Plug 'chrisbra/Colorizer'
