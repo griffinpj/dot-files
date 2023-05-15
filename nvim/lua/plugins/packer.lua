@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
     use ('tpope/vim-fugitive')
     use ('tpope/vim-commentary')
     use ('mhinz/vim-startify')
+    use ('psliwka/vim-smoothie');
 
     -- Better Find and Replace '\ + r + a
     use ('kqito/vim-easy-replace')

@@ -171,3 +171,15 @@ if ! command -v ripgrep > /dev/null 2>&1; then
   echo "Installing ripgrep..."
   brew install ripgrep
 fi
+if ! command -v fontconfig > /dev/null 2>&1; then
+  echo "Installing fontconfig..."
+  brew install fontconfig
+fi
+if ! command -v xquartz > /dev/null 2>&1; then
+  echo "Installing xquartz..."
+  brew install xquartz
+fi
+if ! command -v freetype > /dev/null 2>&1; then
+  echo "Installing freetype..."
+  brew install freetype
+fi
