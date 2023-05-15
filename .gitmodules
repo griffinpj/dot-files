@@ -1,0 +1,2 @@
+[submodule "./st"]
+	url = git@github.com:griffinpj/st.git
