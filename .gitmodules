@@ -1,3 +1,4 @@
 [submodule "st"]
     path = st
-	url = https://github.com/griffinpj/st.git
+    url = git@github.com:griffinpj/st.git
+	branch = master
