@@ -2,3 +2,6 @@
     path = st
     url = git@github.com:griffinpj/st.git
 	branch = master
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:griffinpj/nvim.git
