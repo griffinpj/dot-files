@@ -1,8 +1,11 @@
+# Open st terminal
+cmd - return : st 
+
 # Navigation
-cmd - h : yabai -m window --focus west || yabai -m display --focus west
-cmd - j : yabai -m window --focus south || yabai -m display --focus south
-cmd - k : yabai -m window --focus north || yabai -m display --focus north
-cmd - l : yabai -m window --focus east || yabai -m display --focus east
+# cmd - h : yabai -m window --focus west || yabai -m display --focus west
+# cmd - j : yabai -m window --focus south || yabai -m display --focus south
+# cmd - k : yabai -m window --focus north || yabai -m display --focus north
+# cmd - l : yabai -m window --focus east || yabai -m display --focus east
 
 # Moving windows
 # shift + cmd - h : yabai -m window --warp west
@@ -10,10 +13,10 @@ cmd - l : yabai -m window --focus east || yabai -m display --focus east
 # shift + cmd - k : yabai -m window --warp north
 # shift + cmd - l : yabai -m window --warp east
 
-cmd + shift - h : yabai -m window --warp west || $(yabai -m window --display west; yabai -m display --focus west)
-cmd + shift - j : yabai -m window --warp south || $(yabai -m window --display south; yabai -m display --focus south)
-cmd + shift - k : yabai -m window --warp north || $(yabai -m window --display north; yabai -m display --focus north)
-cmd + shift - l : yabai -m window --warp east || $(yabai -m window --display east; yabai -m display --focus east)
+# cmd + shift - h : yabai -m window --warp west || $(yabai -m window --display west; yabai -m display --focus west)
+# cmd + shift - j : yabai -m window --warp south || $(yabai -m window --display south; yabai -m display --focus south)
+# cmd + shift - k : yabai -m window --warp north || $(yabai -m window --display north; yabai -m display --focus north)
+# cmd + shift - l : yabai -m window --warp east || $(yabai -m window --display east; yabai -m display --focus east)
 
 # Move focus container to workspace
 # shift + alt - m : yabai -m window --space last && yabai -m space --focus last
@@ -27,10 +30,10 @@ cmd + shift - l : yabai -m window --warp east || $(yabai -m window --display eas
 # shift + alt - 6 : yabai -m window --space 6 && yabai -m space --focus 6
 
 # Resize windows
-cmd + alt - j : yabai -m window --resize bottom:0:-50; yabai -m window --resize top:0:50
-cmd + alt - k : yabai -m window --resize top:0:-50 ; yabai -m window --resize bottom:0:50
-cmd + alt - l : yabai -m window --resize right:-50:0 ; yabai -m window --resize left:50:0
-cmd + alt - h : yabai -m window --resize left:-50:0; yabai -m window --resize right:50:0
+# cmd + alt - j : yabai -m window --resize bottom:0:-50; yabai -m window --resize top:0:50
+# cmd + alt - k : yabai -m window --resize top:0:-50 ; yabai -m window --resize bottom:0:50
+# cmd + alt - l : yabai -m window --resize right:-50:0 ; yabai -m window --resize left:50:0
+# cmd + alt - h : yabai -m window --resize left:-50:0; yabai -m window --resize right:50:0
 
 # alt - r ; resize
 # resize < escape ; default
@@ -41,37 +44,37 @@ cmd + alt - h : yabai -m window --resize left:-50:0; yabai -m window --resize ri
 # resize < l : yabai -m window --resize left:-100:0 ; yabai -m window --resize right:100:0
 
 # Float and center window
-cmd + alt - c : yabai -m window --toggle float;\
-                  yabai -m window --grid 4:4:1:1:2:2
+# cmd + alt - c : yabai -m window --toggle float;\
+#                   yabai -m window --grid 4:4:1:1:2:2
 
 # Equalize size of windows
-lctrl + alt - 0 : yabai -m space --balance
+# lctrl + alt - 0 : yabai -m space --balance
 
 # Enable / Disable gaps in current workspace
-lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+# lctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # Rotate windows clockwise and anticlockwise
-alt - r         : yabai -m space --rotate 90
-shift + alt - r : yabai -m space --rotate 270
+# alt - r         : yabai -m space --rotate 90
+# shift + alt - r : yabai -m space --rotate 270
 
 # Rotate on X and Y Axis
-shift + alt - x : yabai -m space --mirror x-axis
-shift + alt - y : yabai -m space --mirror y-axis
+# shift + alt - x : yabai -m space --mirror x-axis
+# shift + alt - y : yabai -m space --mirror y-axis
 
 # Set insertion point for focused container
-shift + cmd + alt - h : yabai -m window --insert west
-shift + cmd + alt - j : yabai -m window --insert south
-shift + cmd + alt - k : yabai -m window --insert north
-shift + cmd + alt - l : yabai -m window --insert east
+# shift + cmd + alt - h : yabai -m window --insert west
+# shift + cmd + alt - j : yabai -m window --insert south
+# shift + cmd + alt - k : yabai -m window --insert north
+# shift + cmd + alt - l : yabai -m window --insert east
 
 # Float / Unfloat window
-shift + alt - space : yabai -m window --toggle float
+# shift + alt - space : yabai -m window --toggle float
 
 # Restart Yabai
-shift + lctrl + alt - r : 
-    launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+# shift + lctrl + alt - r : 
+#     launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # Make window native fullscreen
-alt - f         : yabai -m window --toggle zoom-fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
+# alt - f         : yabai -m window --toggle zoom-fullscreen
+# shift + alt - f : yabai -m window --toggle native-fullscreen
 
