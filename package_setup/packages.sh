@@ -183,3 +183,15 @@ if ! command -v freetype > /dev/null 2>&1; then
   echo "Installing freetype..."
   brew install freetype
 fi
+if ! command -v stow > /dev/null 2>&1; then
+  echo "Installing stow..."
+  brew install stow
+fi
+if ! command -v most > /dev/null 2>&1; then
+  echo "Installing most..."
+  brew install most
+fi
+if ! command -v tmux > /dev/null 2>&1; then
+  echo "Installing tmux..."
+  brew install tmux
+fi
