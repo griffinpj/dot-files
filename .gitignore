@@ -3,3 +3,5 @@ vim/*
 neofetch/*
 secrets/*
 coc/extensions/node_modules/*
+qBittorrent/*
+.DS_Store
