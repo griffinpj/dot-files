@@ -16,10 +16,13 @@ set -g fish_key_bindings fish_user_key_bindings
 set -gx PNPM_HOME "/Users/griffinjohnson/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 
+
 # Get gpg to work ...
 export GPG_TTY=$(tty)
 
 # Add config scripts to the path
 set -U fish_user_paths $fish_user_paths $HOME/.config/scripts
 
+
 source /Users/gjohnson/.docker/init-fish.sh || true # Added by Docker Desktop
+

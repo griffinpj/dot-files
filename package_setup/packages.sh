@@ -195,3 +195,7 @@ if ! command -v tmux > /dev/null 2>&1; then
   echo "Installing tmux..."
   brew install tmux
 fi
+if ! command -v reattach-to-user-namespace > /dev/null 2>&1; then
+  echo "Installing reattach-to-user-namespace..."
+  brew install reattach-to-user-namespace
+fi
