@@ -1,0 +1,6 @@
+pane	1	0	1	:*	0	~	:/Users/gjohnson	1	fish	:
+pane	2	0	1	:*	0	nvim -S .session.vim ~/.config	:/Users/gjohnson/.config	1	nvim	:9406
+pane	2	0	1	:*	1	htop ~/.config	:/Users/gjohnson/.config	0	htop	:9340
+window	1	0	:fish	1	:*	cd1e,247x57,0,0,1	:
+window	2	0	:nvim	1	:*	e172,247x57,0,0{123x57,0,0,2,123x57,124,0,3}	:
+state	2	1

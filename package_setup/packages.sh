@@ -199,3 +199,11 @@ if ! command -v reattach-to-user-namespace > /dev/null 2>&1; then
   echo "Installing reattach-to-user-namespace..."
   brew install reattach-to-user-namespace
 fi
+if ! command -v aichat > /dev/null 2>&1; then
+  echo "Installing aichat..."
+  brew install aichat
+fi
+if ! command -v pgrep > /dev/null 2>&1; then
+  echo "Installing pgrep..."
+  brew install pgrep
+fi

@@ -1,0 +1,3 @@
+pane	0	0	1	:*	0	nvim . ~/.config	:/Users/gjohnson/.config	1	nvim	:5646
+window	0	0	:nvim	1	:*	8d5f,259x102,0,0,2	:
+state	0	
