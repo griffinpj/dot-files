@@ -91,10 +91,6 @@ if ! command -v docker-compose > /dev/null 2>&1; then
   echo "Installing docker-compose..."
   brew install docker-compose
 fi
-if ! command -v colima > /dev/null 2>&1; then
-  echo "Installing colima..."
-  brew install colima
-fi
 if ! command -v ag > /dev/null 2>&1; then
   echo "Installing ag..."
   brew install ag
@@ -206,4 +202,24 @@ fi
 if ! command -v pgrep > /dev/null 2>&1; then
   echo "Installing pgrep..."
   brew install pgrep
+fi
+if ! command -v ddgr > /dev/null 2>&1; then
+  echo "Installing ddgr..."
+  brew install ddgr
+fi
+if ! command -v yabai > /dev/null 2>&1; then
+  echo "Installing yabai..."
+  brew install yabai
+fi
+if ! command -v synergy-core > /dev/null 2>&1; then
+  echo "Installing synergy-core..."
+  brew install synergy-core
+fi
+if ! command -v plexamp > /dev/null 2>&1; then
+  echo "Installing plexamp..."
+  brew install plexamp
+fi
+if ! command -v bun > /dev/null 2>&1; then
+  echo "Installing bun..."
+  brew install bun
 fi

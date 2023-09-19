@@ -1,8 +1,0 @@
-pane	1	0	1	:*	0	~	:/Users/gjohnson	1	fish	:
-pane	2	0	1	:*	0	~/.config	:/Users/gjohnson/.config	1	fish	:
-pane	2	0	1	:*	1	~/.config	:/Users/gjohnson/.config	0	fish	:
-pane	3	0	1	:*	0	nvim . ~/.config	:/Users/gjohnson/.config	1	nvim	:10659
-window	1	0	:fish	1	:*	cd1e,247x57,0,0,1	:
-window	2	0	:fish	1	:*	e172,247x57,0,0{123x57,0,0,2,123x57,124,0,3}	:
-window	3	0	:nvim	1	:*	8d61,259x102,0,0,4	:
-state	3	

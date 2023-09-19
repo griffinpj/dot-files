@@ -5,3 +5,4 @@ secrets/*
 coc/extensions/node_modules/*
 qBittorrent/*
 .DS_Store
+tmux/resurrect/**/*
