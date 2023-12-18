@@ -223,3 +223,7 @@ if ! command -v bun > /dev/null 2>&1; then
   echo "Installing bun..."
   brew install bun
 fi
+if ! command -v balenaetcher > /dev/null 2>&1; then
+  echo "Installing balenaetcher..."
+  brew install balenaetcher
+fi

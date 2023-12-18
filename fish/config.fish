@@ -19,6 +19,7 @@ set -gx PATH "$PNPM_HOME" $PATH
 
 # Get gpg to work ...
 export GPG_TTY=$(tty)
+set -x GPG_TTY (tty)
 
 # Add config scripts to the path
 set -U fish_user_paths $fish_user_paths $HOME/.config/scripts
@@ -26,3 +27,8 @@ set -U fish_user_paths $fish_user_paths $HOME/.config/scripts
 
 source /Users/gjohnson/.docker/init-fish.sh || true # Added by Docker Desktop
 
+
+# pnpm
+set -gx PNPM_HOME "/Users/gjohnson/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end
