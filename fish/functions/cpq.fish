@@ -1,3 +1,3 @@
 function cpq
-	cd ~/dev/CPQ && ls -a
+	cd ~/dev/CPQ && clear
 end
